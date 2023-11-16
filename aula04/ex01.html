@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 04</title>
+    <style>
+        body {
+            background-color: darkblue;
+            color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando Estudos com DOM</h1>
+    <h2>Document Object Model</h2>
+    <p>Tudo dentro do JavaScript está dentro da janela (Window) </p>
+    <p>Dentro do Window, estão:</p>
+    <ul>
+        <li>Location</li>
+        <li>Document</li>
+        <ul>
+            <li>HTML</li>
+            <ul>
+                <li>head</li>
+                <ul>
+                    <li>meta</li>
+                    <li>title</li>
+                    <li>style</li>
+                </ul>
+                <li>body</li>
+                <ul>
+                    <li>h1</li>
+                    <li>p</li>
+                    <li>div</li>
+                    <li>script</li>
+                </ul>
+            </ul>
+            
+        </ul>
+        <li>History</li>
+    </ul>
+    <h2>Aqui vai o resultado</h2>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //window.document.write("Set de caracteres: ");
+        //window.document.write(window.document.charset, "<br>");
+        //window.document.write("Navegador atual: ", window.navigator.appName, "<br>");
+
+        var div1 = window.document.getElementsByTagName('div')[0];
+        window.document.write("Em div1 está escrito assim: ", div1.innerText);
+        div1.style.color = "yellow";
+
+        var d = window.document.querySelector('div#msg');
+	    d.style.background = 'red';
+
+    </script>
 </body>
 </html>

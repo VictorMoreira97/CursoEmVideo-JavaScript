@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - DOM Events</title>
+    <style>
+        div#area {
+            font: bold 15pt arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>EVENTOS DOM</h1>
+
+    <div id="area" onclick="funcaoClicar()" onmouseover="funcaoEntrar()" onmouseout="funcaoSair()">
+        INTERAJA...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+        function funcaoClicar() {
+            //bloco de código da função
+            a.innerText = 'CLICOU!'
+            a.style.background = 'red'
+        }
+        function funcaoEntrar() {
+            a.style.background = 'blue'
+            a.innerText = 'ENTROU!';
+        }
+        function funcaoSair() {
+            a.innerText = 'SAIU!';
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
