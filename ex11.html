@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+
+    <form action="">
+        <label for="">País de origem: </label>
+        <input type="text" name="" id="pais">
+        <button type="button" onclick="nacionalidade()">Verificar</button>
+    </form>
+
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        var pais = window.document.querySelector("input#pais".value);
+        var resposta = window.document.querySelector("div#resposta");
+
+        function nacionalidade (pais) {
+            if (pais != "Brasil") {
+                resposta.innerHTML += `<p>Nacionalidade: Estrangeira`;
+            } else {
+                resposta.innerHTML += `<p>Nacionalidade: Brasileira</p>`;
+            }
+        }
+
+    </script>
+</body>
+</html>
