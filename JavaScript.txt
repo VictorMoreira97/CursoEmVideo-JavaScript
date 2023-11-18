@@ -1,0 +1,149 @@
+JavaScript
+
+<script src="script.js"></script>
+-----------------------------------------
+IMPRIMIR DADOS
+
+<script>
+
+document.write("");
+window.alert("");
+
+</script>
+
+-----------------------------------------
+VARIÁVEIS E TIPOS PRIMITIVOS
+
+var n1 = 5;
+let n2 = 8.5;
+const n3 = 15;
+
+var s1 = "JavaScript";
+var s2 = 'Curso em Vídeo';
+var 23 = `Curso em Vídeo`;
+
+Tipos:
+-number: infinity, NaN
+-string
+-boolean
+-null
+-undefined
+-object: array
+-function
+
+-----------------------------------------
+MANIPULAÇÃO DE DADOS (DATA HANDLING)
+
+window.prompt('Insira algo: ');
+
+Document Object Model
+Tudo dentro do JavaScript está dentro da janela (Window)
+
+Dentro do Window, estão:
+
+Location
+Document
+	-HTML
+		-head
+			-meta
+			-title
+			-style
+		-body
+			-h1
+			-p
+			-div
+			-script
+History
+
+	<varivavel>.<elementDOM1>.<elmentDOM2>...<elementDOM_N>
+Exemplos:
+	mensagem.innerHTML = `<p>Agora são ${hora} horas</p>`;
+
+	mensagem.innerHTML += `<p>Bom dia</p>`;
+    imagem.src = `midday.png`
+    document.body.style.background = '#D5BBAC';
+
+-window.document.write("Seu texto aqui");
+
+    <script>
+        window.document.write("Set de caracteres: ");
+        window.document.write(window.document.charset, "<br>");
+        window.document.write("Navegador atual: ", 	window.navigator.appName, "<br>");
+    </script>
+
+-GET ELEMENT
+
+-getElementsByName() <tag name=""></tag>
+-getElementsById()
+-getElementsByClassName()
+-querySelector()
+-querySelectorAll()
+
+Ex.: 
+
+	var div1 = window.document.getElementsByTagName('div')[0];
+        window.document.write("Em div1 está escrito assim: ", 	div1.innerText);
+        div1.style.color = "yellow";
+
+	var d = window.document.querySelector('div#msg');
+	d.style.color = 'blue';
+
+-----------------------------------------
+-EVENTOS DOM
+
+Exemplos:
+-mouseenter
+-mousemove
+-mousedown
+-mouseuo
+-click
+-mouseout
+
+<tag id="idDoElemento" onclick="acaoDoEvento()"></tag>
+
+function acaoDoEvento() {
+	//bloco de código
+	var a = window.document.getElementById('idDoElemento');
+}
+
+Event Listerner: definir ações com a tag no JavaScript e não no HTML:
+
+Exemplo:
+
+<tag id="idDoElemento">Elemento</tag>
+<script>
+        var a = window.document.getElementById('idDoElemento');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+	function funcaoEntrar() {
+            //bloco de código da função
+        }
+	function funcaoEntrar() {
+            //bloco de código da função
+        }
+	function funcaoEntrar() {
+            //bloco de código da função
+        }
+
+</script>
+
+-----------------------------------------
+CONDICIONAIS
+
+-SINTAXE:
+
+	if (condicao) {
+		//comandos caso condicao seja TRUE
+	} else {
+
+	}
+
+-----------------------------------------
+FUNÇÕES IMPORTANTES
+
+- Date()
+	Ex.:
+		var data = new Date();
+	    var hora = data.getHours();
