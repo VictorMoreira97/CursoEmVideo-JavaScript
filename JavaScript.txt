@@ -147,3 +147,16 @@ FUNÇÕES IMPORTANTES
 	Ex.:
 		var data = new Date();
 	    var hora = data.getHours();
+
+-----------------------------------------
+MANIPULAÇÃO DE IMAGENS
+Exemplo:
+        var imagem = document.createElement('imagem');
+
+        imagem.setAttribute('id', 'foto');
+
+        if (fgend[0].checked) {
+            genero = `Homem`;
+        } else if (fgend[1].checked) {
+            genero = `Mulher`;
+        }
