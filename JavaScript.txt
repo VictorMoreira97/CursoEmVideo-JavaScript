@@ -160,3 +160,23 @@ Exemplo:
         } else if (fgend[1].checked) {
             genero = `Mulher`;
         }
+
+-----------------------------------------
+LOOPINGS - ESTRUTURAS DE REPTIÇÃO
+-WHILE
+
+	while() {
+		//bloco de comandos
+	}
+
+-DO-WHILE
+
+	do {
+		//bloxo de comandos
+	} while ();
+
+-FOR
+
+	for(inicio; teste; incremento) {
+		//bloco de comandos
+	}
