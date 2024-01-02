@@ -4,7 +4,7 @@ function horaDoDia () {
     var imagem = window.document.getElementById('img');
 
     var data = new Date();
-    var hora = data.getHours();
+    var hora = 23;
 
     mensagem.innerHTML = `<p>Agora são ${hora} horas</p>`;
 
